@@ -14,62 +14,50 @@ public class Note {
 	 * the user but should be always initialized with the system date
 	 */
 
-	private int noteId;
-
-	private String noteTitle;
-
-	private String noteContent;
-
-	private String noteStatus;
-
-	private LocalDateTime createdAt;
-
 	public Note() {
 	}
 
-	public Note(int noteId, String noteTitle, String noteContent, String noteStatus) {
-		super();
-		this.noteId = noteId;
-		this.noteTitle = noteTitle;
-		this.noteContent = noteContent;
-		this.noteStatus = noteStatus;
-	}
-
 	/* All the getters/setters definition should be implemented here */
+
 	public int getNoteId() {
-		return noteId;
+		return 0;
+
 	}
 
-	public void setNoteId(int noteId) {
-		this.noteId = noteId;
+	public void setNoteId(int intid) {
+
 	}
 
 	public String getNoteTitle() {
-		return noteTitle;
+		return null;
 	}
 
-	public void setNoteTitle(String noteTitle) {
-		this.noteTitle = noteTitle;
+	public void setNoteTitle(String string) {
+
 	}
 
 	public String getNoteContent() {
-		return noteContent;
+		return null;
 	}
 
-	public void setNoteContent(String noteContent) {
-		this.noteContent = noteContent;
+	public void setNoteContent(String string) {
+
 	}
 
 	public String getNoteStatus() {
-		return noteStatus;
+		return null;
 	}
 
-	public void setNoteStatus(String noteStatus) {
-		this.noteStatus = noteStatus;
+	public void setNoteStatus(String string) {
+
 	}
 
 	public LocalDateTime getCreatedAt() {
-		return LocalDateTime.now();
+		return null;
+	}
+
+	public void setCreatedAt(LocalDateTime localdatetime) {
+
 	}
 
 	/* Override the toString() method */
@@ -78,5 +66,4 @@ public class Note {
 	public String toString() {
 		return null;
 	}
-
 }
